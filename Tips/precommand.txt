@@ -1,31 +1,15 @@
-setup flask :  
-//on project folder ,terminal 
 
- py -3 -m venv .venv
-   
- .venv\Scripts\activate
-
-
-=============================================================================
-PROBLEM :   
-
-.venv\Scripts\activate : File E:\project -davv\test
-folder\.venv\Scripts\Activate.ps1 cannot be loaded because running scripts
-
-command :
- 
-powershell  :  admin mode 
- Set-ExecutionPolicy RemoteSigned   
-****after use  :  
- Set-ExecutionPolicy Restricted
- 
-========================================================================
-++ requirements    --> 
- ** if error    : " fatal error  type promt "  
-      ==   use python -m  < then command   >  
-  
-
-  
-=============================================
-to RUN:
-python file compile 
+- If you encounter an issue with script execution policy, follow these steps:
+1. Open PowerShell as Administrator.
+2. Run:
+  ```
+  Set-ExecutionPolicy RemoteSigned
+  ```
+3. Activate your virtual environment again:
+  ```
+  .venv\Scripts\activate
+  ```
+4. After use, reset the execution policy:
+  ```
+  Set-ExecutionPolicy Restricted
+  ```
