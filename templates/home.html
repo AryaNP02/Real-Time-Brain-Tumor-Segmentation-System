@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brain Tumor Detection</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="static\styles2.css" />
+  </head>
+  <body class="dark-mode">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="{{url_for('home')}}">TumorSense</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{{url_for('home')}}"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{url_for('test_mri')}}">Test MRI</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{url_for('about')}}">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Brain Tumor Detection System</h1>
+      <p>Detecting Hope, Defeating Tumors</p>
+      <a href="#categories">Categories</a>
+    </section>
+
+    <section id="categories" class="categories">
+      <div class="category">
+        <!-- <img src="glio.jpg" alt="Gliomas Tumor" /> -->
+        <h2>Gliomas Tumor</h2>
+        <p>
+          Gliomas are primary brain tumors that arise from glial cells and can
+          vary in aggressiveness, with glioblastoma being the most malignant
+          subtype.
+        </p>
+        <a href="https://en.wikipedia.org/wiki/Glioma">Learn More</a>
+      </div>
+
+      <div class="category">
+        <!-- <img src="glio.jpg" alt="Meningiomas Tumor" /> -->
+        <h2>Meningiomas Tumor</h2>
+        <p>
+          Meningiomas are typically slow-growing, often benign brain tumors that
+          develop in the protective meninges, commonly found in the brain's
+          outer covering.
+        </p>
+        <a href="https://en.wikipedia.org/wiki/Meningioma">Learn More</a>
+      </div>
+
+      <div class="category">
+        <!-- <img src="pitu.webp" alt="Pituitary Tumor" /> -->
+        <h2>Pituitary Tumor</h2>
+        <p>
+          Pituitary adenomas occur at the base of the brain and can affect
+          hormone regulation, leading to various endocrine disorders.
+        </p>
+        <a href="https://en.wikipedia.org/wiki/Pituitary_adenoma">Learn More</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 Brain Tumor Detection</p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

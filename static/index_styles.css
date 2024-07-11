@@ -1,0 +1,55 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+}
+
+header {
+    background-color: #265073;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+.version {
+    font-size: 0.6em;
+    opacity: 0.5;
+}
+
+body{
+    background-color: #2D9596;
+    color: #fff;
+}
+
+.hero img{
+    border-radius: 9px;
+    float: right;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.features{
+    background-color: #9AD0C2;
+}
+
+.cta{
+    background-color: #2D9596;
+    color: #fff;
+    padding: 20px 0;
+}
+
+footer{
+    background-color: #265073;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+hr{
+    color:black;
+    margin: 0;
+    padding: 0;
+}
+
+.result{
+    height: 360px;
+    width: 360px;
+}
